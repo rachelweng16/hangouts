@@ -9,10 +9,10 @@ const MapView: React.FC = () => {
   const mapInstance = useRef<maplibregl.Map | null>(null);
 
   // Replace with your actual values
-const apiKey = process.env.NEXT_PUBLIC_AMAZON_LOCATION_API_KEY!;
-const region = process.env.NEXT_PUBLIC_AWS_REGION || "ca-central-1";
-const style = process.env.NEXT_PUBLIC_MAP_STYLE || "Standard";
-const colorScheme = process.env.NEXT_PUBLIC_COLOR_SCHEME || "Light";
+  const apiKey = process.env.NEXT_PUBLIC_AMAZON_LOCATION_API_KEY!;
+  const region = process.env.NEXT_PUBLIC_AWS_REGION || "ca-central-1";
+  const style = process.env.NEXT_PUBLIC_MAP_STYLE || "Standard";
+  const colorScheme = process.env.NEXT_PUBLIC_COLOR_SCHEME || "Light";
 
   useEffect(() => {
     if (mapContainer.current && !mapInstance.current) {
